@@ -1,0 +1,285 @@
+/**
+    Colores
+*/
+:root {
+    --colorMain: #ffb320;
+}
+
+#tituloJuego {
+    color: var(--colorMain);
+}
+#infoTituloJuego {
+    color: var(--colorMain);
+}
+.adversarios {
+    background: #ffffff;
+    padding: 1%;
+    border: 1px solid black;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    margin: 0 2%;
+}
+.adversarios > div {
+    margin: 1%;
+}
+.adversarios > div h4,
+.adversarios > div h5 {
+    color: var(--colorMain);
+}
+
+.adversarios #recargar {
+    width: 50px;
+    height: 50px;
+}
+
+.adversarios #recargar:hover {
+    cursor: pointer;
+}
+
+.adversarios div {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 1%;
+    text-align: center;
+    background-color: var(--colorMain);
+}
+
+.adversarios div h4,
+.adversarios div h5 {
+    color: black;
+}
+.adversarios div {
+    cursor: pointer;
+}
+.adversarios div img {
+    max-width: 15rem;
+}
+#tituloJuego {
+    text-align: center;
+    padding: 2%;
+}
+
+.oculto {
+    display: none;
+    transition-delay: 1s;
+}
+
+.card.naves,
+.card.piloto,
+.card.accesorio {
+    width: 5rem;
+}
+
+.imagesGame {
+    width: 50px;
+}
+
+#loading-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background: transparent;
+    color: black;
+    font-size: 4em;
+}
+
+.accesoriosJug,
+.pilotosJug,
+.navesJug {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+#contenedor-naves,
+#contenedor-pilotos,
+#contenedor-accesorios {
+    background: var(--colorMain);
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 2%;
+}
+
+.select {
+    background: lightgreen;
+    border: 1px solid black;
+}
+
+.btn-starwars {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.btn-starwars:hover {
+    background-color: lightgreen;
+    border: 1px solid black;
+}
+
+.nav-piloto img {
+    width: 20rem;
+}
+
+.elec-acc img {
+    width: 10rem;
+}
+/***********/
+.cont-datos {
+    width: 50%;
+}
+.cont-datos div {
+    margin: 15px;
+}
+
+.datosJugador {
+    display: flex;
+    background: white;
+    margin: 0 5%;
+    border-radius: 25px;
+}
+.cont-eleccion {
+    width: 50%;
+    padding: 2%;
+    text-align: center;
+    background: #ffb320;
+    margin: 2%;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+#imagenPiloto {
+    background: white;
+    border-radius: 15px;
+}
+#imagenNave {
+    background: white;
+
+    border-radius: 15px;
+}
+.accElecc {
+    padding: 5%;
+}
+.accElecc img {
+    padding: 1%;
+}
+.elec-acc label {
+    color: var(--colorMain);
+}
+#limiteAcc,
+#numAccSelect {
+    color: black;
+}
+
+.nav-piloto {
+    display: flex;
+    gap: 2%;
+}
+.batalla {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1%;
+    text-align: center;
+}
+.batalla-jugador img,
+.batalla-rival img {
+    height: 250px;
+    width: 250px;
+}
+
+#tb-clasificacion {
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+    border: 1px solid black !important;
+}
+
+#tb-clasificacion thead {
+    background: var(--colorMain);
+    font-weight: bold;
+}
+tr,
+td,
+th {
+    border: 2px solid black !important;
+}
+.card-header {
+    background: var(--colorMain);
+}
+#tb-clasificacion td > img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+b > h2 {
+    color: black;
+}
+
+main.contendor-batalla {
+    display: flex;
+    flex-direction: column;
+}
+
+#resumen-batalla {
+    display: flex;
+    color: var(--colorMain);
+    justify-content: space-around;
+    border: 2px var(--colorMain);
+}
+.batalla-jugador > h5,
+.batalla-rival > h5 {
+    color: var(--colorMain);
+}
+#resumen-rival,
+#resumen-jugador {
+    text-align: center;
+    width: 40%;
+    background: 0px center;
+    height: auto;
+}
+
+main.contenedor-batalla {
+    text-align: center;
+}
+
+.fin-partida {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .cont-datos {
+        width: 100%;
+    }
+    .cont-eleccion {
+        width: 95%;
+    }
+    .datosJugador {
+        margin: 3rem 1.5rem;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .cont-datos {
+        width: 100%;
+    }
+    .cont-eleccion {
+        width: 95%;
+    }
+    .datosJugador {
+        margin: 3rem 1.5rem;
+    }
+    .navesJug {
+        justify-content: center;
+    }
+    .pilotosJug {
+        justify-content: center;
+    }
+    .accesoriosJug {
+        justify-content: center;
+    }
+}

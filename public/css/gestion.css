@@ -1,0 +1,247 @@
+:root {
+    --colorMain: #ffb320;
+}
+
+td {
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+tr,
+td,
+th {
+    border: 2px solid #000000 !important;
+}
+td img {
+    height: 90px;
+    width: 75px;
+}
+tr th {
+    text-align: center;
+}
+thead {
+    background: var(--colorMain);
+}
+
+/*------------------
+  Responsive
+---------------------*/
+
+@media (min-width: 1200px) {
+    .container {
+        display: block !important;
+        max-width: 1176px;
+    }
+
+    .main-menu {
+        display: block !important;
+    }
+}
+
+/* Medium screen : 992px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .main-menu {
+        display: block !important;
+    }
+
+    .hero-slider .owl-dots {
+        max-width: 930px;
+    }
+
+    .card-body {
+        overflow-x: scroll !important;
+    }
+}
+
+/* Tablet :768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .site-logo {
+        max-width: 130px;
+    }
+
+    .main-menu {
+        display: block !important;
+    }
+
+    .user-panel {
+        padding: 8px 15px;
+    }
+
+    .hero-slider .hs-text h2 {
+        font-size: 50px;
+    }
+
+    .hero-slider .owl-dots {
+        max-width: 690px;
+    }
+
+    .adversarios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .adversarios > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #img-login {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .vh-100 {
+        height: 70vh !important;
+    }
+
+    .card-body {
+        overflow-x: scroll !important;
+    }
+}
+
+/* Large Mobile :480px. */
+
+@media only screen and (max-width: 767px) {
+    .header-section {
+        overflow: visible;
+        padding: 23px 0;
+    }
+
+    .header-section .container {
+        position: relative;
+    }
+
+    .site-logo {
+        float: none;
+        padding-top: 0;
+    }
+
+    .main-menu {
+        display: none;
+        position: absolute;
+        top: calc(100% + 24px);
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        z-index: 999;
+    }
+
+    .main-menu ul li {
+        display: block;
+        border-bottom: 1px solid #ececec;
+        text-align: center;
+    }
+
+    .main-menu ul li a {
+        margin-left: 0;
+        color: #131313;
+    }
+
+    .main-menu ul li:hover {
+        background: var(--colorMain);
+    }
+
+    .main-menu ul li a:hover {
+        color: black;
+    }
+
+    .nav-switch {
+        color: #fff;
+        display: block;
+        float: right;
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+    .hero-slider .hs-text h2 {
+        font-size: 50px;
+    }
+
+    .hero-slider .owl-dots {
+        max-width: 690px;
+    }
+
+    .user-panel {
+        display: none;
+    }
+
+    #logout-menu {
+        display: block;
+    }
+
+    .adversarios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .adversarios > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #img-login {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .card-body {
+        overflow-x: scroll !important;
+    }
+}
+
+/* Medium Mobile :480px. */
+
+@media only screen and (max-width: 576px) {
+    .hero-slider .owl-dots {
+        padding: 0 15px;
+    }
+
+    .adversarios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .adversarios > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    td:nth-child(1),
+    td:nth-child(3),
+    td:nth-child(5) {
+        display: none;
+    }
+    tr th:nth-child(1),
+    tr th:nth-child(3),
+    tr th:nth-child(5) {
+        display: none;
+    }
+
+    .card-body {
+        overflow-x: scroll !important;
+    }
+}
+
+/* Small Mobile :320px. */
+
+@media only screen and (max-width: 479px) {
+    .hero-slider .hs-item {
+        height: auto;
+        padding: 150px 0;
+    }
+
+    .ln-title {
+        display: none;
+    }
+
+    .adversarios {
+        flex-direction: column;
+        align-items: center;
+    }
+}

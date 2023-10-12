@@ -1,0 +1,29 @@
+main {
+    margin-bottom: 0;
+    padding: 2%;
+    height: 100%;
+}
+
+.tab-content {
+    background: whitesmoke;
+}
+
+.nav-link {
+    color: whitesmoke;
+}
+
+.nav-link.active {
+    background-color: var(--colorMain) !important;
+    color: black !important;
+}
+
+.nav-link:hover {
+    color: var(--colorMain);
+}
+tr,td,th {
+    text-align: center;
+    border: 2px solid black !important;
+}
+#tb-clasificacion tr th {
+    background: var(--colorMain);
+}

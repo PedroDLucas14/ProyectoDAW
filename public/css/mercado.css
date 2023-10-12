@@ -1,0 +1,99 @@
+:root {
+    --colorMain: #ffb320;
+}
+main {
+    min-height: 100%;
+    height: auto;
+    padding-top: 2%;
+}
+.container > div:first-child {
+    text-align: center;
+    background: gray;
+}
+.nav-link {
+    color: whitesmoke;
+}
+.nav-link.active.show {
+    background-color: var(--colorMain);
+    color: black;
+}
+.nav-link:hover {
+    color: var(--colorMain);
+}
+.card {
+    align-items: center;
+}
+.card-body {
+    text-align: center;
+}
+.tabs.mercado {
+    padding-top: 1% !important;
+}
+#contenedor-creditos {
+    background: var(--colorMain);
+    border: 5px solid black;
+    border-radius: 25px;
+    position: sticky;
+    top: 20px;
+    z-index: 998;
+}
+#creditos {
+    font-size: 2rem;
+    color: black;
+}
+#naves,
+#piloto,
+#accesorios {
+    margin-top: 1%;
+}
+div.row > div {
+    margin-bottom: 2%;
+}
+form {
+    justify-content: center;
+    padding-bottom: 2%;
+    border: 2px solid black;
+    margin-bottom: 2%;
+    padding: 2% 0;
+    border-radius: 25px;
+    background: #f5f5f5;
+}
+nav div.hidden {
+    margin-bottom: 2%;
+}
+nav div.hidden > div p {
+    color: #ff0000;
+    font-size: 20px !important;
+}
+.card img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background: var(--colorMain);
+}
+.btn-starwars {
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.btn-starwars:hover {
+    background-color: var(--colorMain);
+    border-color: black !important;
+    color: #000;
+}
+
+h6 {
+    padding-bottom: 2%;
+}
+p {
+    color: black;
+    /* font-weight: bold; */
+}
+.card-title {
+    font-weight: bold;
+    font-size: xx-large;
+}
+h3 {
+    color: var(--colorMain);
+    text-align: center;
+}
